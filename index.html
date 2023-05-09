@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slut Projekt</title>
     <link rel="stylesheet" href="mall.css">
@@ -10,19 +11,22 @@
 </head>
 <body>
     <header>
-        <div class="hamburerMenu">
+        <div class="hamburerMenu"><!--hamburgare meny för mobil användare-->
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <nav id="navBar">
+        <nav id="main-nav"><!--navigation för sidan-->
             <ul>
                 <li>
                     <a href="#">HOME</a>
                 </li>
                 <li>
-                    <a href="#">TEAMS</a>
-                    <ul>
+                    <a href="#">TEAM
+                        <span class="arrow">&#x25BC;</span>
+                    </a>
+
+                    <ul class="submenu">
                         <li>
                             <a href="#">CS:GO</a>
                         </li>
@@ -43,5 +47,12 @@
             </ul>
         </nav>
     </header>
+    <div class="mainContainer">
+        <div class="vidContainer">
+            <div class="video">
+                <!-- video länk för esporten-->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
