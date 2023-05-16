@@ -6,7 +6,7 @@
 }
 body{
     color: white;
-    background-color: darkslategrey;
+    background-color: #001939;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #main-nav a{
@@ -22,8 +22,8 @@ body{
     justify-content: center;
     transition: background 0.4s;
 }
-#main-nav a:hover{
-    background: #001939;
+#main-nav a:hover{  
+    color: #001939;
 }
 #main-nav ul{
     list-style: none;
@@ -50,5 +50,43 @@ body{
     width: 100%;
 }
 #main-nav .active{
-    background: #c63e99;
+    color: #93A8AC;
+}
+.gameNav{
+    margin-top: 40px;
+}
+.gameNav .active{
+    color: #93A8AC;
+}
+.gameNav a{
+    color: #ffffff;
+    display: block;
+    height: 64px;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gameNav a:hover{
+    color: #B80E80;
+}
+.gameNav ul{
+    list-style: none;
+    display: flex;
+}
+.gameNav li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+/* Grid layout för spelarnas ansikten */
+.faceGrid{
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	margin: 0 auto;
+	max-width: 90%;
+	margin-bottom: 20px;
 }
