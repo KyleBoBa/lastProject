@@ -52,15 +52,20 @@ body{
 #main-nav .active{
     color: #93A8AC;
 }
+.mainVideo{
+    width: 100%;
+    height: 1000px;
+}
 .gameNav{
-    margin: 200px auto 0;
+    margin: 200px auto 50px;
     max-width: 90%;
 }
-.gameNav .active{
-    color: #93A8AC;
+.gameNav .active2{
+    color: #ffffff;
+    background-color: #B80E80;
 }
 .gameNav a{
-    color: #ffffff;
+    color: #93A8AC;
     display: block;
     height: 64px;
     justify-content: center;
@@ -71,7 +76,7 @@ body{
     justify-content: center;
 }
 .gameNav a:hover{
-    color: #B80E80;
+    color: #ffffff;
 }
 .gameNav ul{
     list-style: none;
