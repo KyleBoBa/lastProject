@@ -24,7 +24,6 @@
                     <a href="#">TEAMS
                         <span class="arrow">&#x25BC;</span>
                     </a>
-
                     <ul class="submenu">
                         <li>
                             <a href="csgo.html">CS:GO</a>
@@ -46,12 +45,78 @@
             </ul>
         </nav>
     </header>
-    <div class="mainContainer">
-        <div class="vidContainer">
-            <div class="video">
-                <video class="mainVideo" controls src="video/ESPORT_GRYT_16-9.mp4" alt="video on the eberesport program"></video>
+    <div class="container slider">
+        <div class="slider-inner">
+            <img class="slide" src="image/csgo1.jpg" alt="image thing">
+            <img class="slide" src="image/csgo2.jpg" alt="image thing">
+            <img class="slide" src="image/lol1.jpg" alt="image thing">
+        </div>
+    </div>
+    <div class="home">
+        <div class="eber">
+            <h1>EBERESPORT</h1>
+            <p>Since 2016, Ebersteinska Gymnasiet has become one of the most recognizable esports 
+                organizations within the school esports scene. With championships industry-wide eberesport 
+                prides itself on being the best when it comes to gaming.
+            </p>
+            <div class="eberImg">
+                <img class="imgFull" src="image/eber2.jpg" alt="pictuce of student playing game">
+                <div class="eberInfo">
+                    <h1>Ebersteinska Gymnasiet</h1>
+                    <p>Blah blah csgo laget waow omg 
+                    csgo lag waow text text lorem ipsum we</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <img class="imgSmall" src="image/eber1.jpg" alt="pictuce of student playing game">
             </div>
         </div>
     </div>
+    <div class="mainTeams">
+        <h1>EBER TEAMS</h1>
+        <p></p>
+        <div class="cardContainer">
+            <div class="card">
+                <img src="image/csgo1.jpg" alt="csgo team">
+                <div class="cardInfo">
+                    <h1>CS:GO</h1>
+                    <p>Blah blah csgo laget waow omg 
+                    csgo lag waow text text lorem ipsum we</p>
+                    <a href="csgo.html" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/lol1.jpg" alt="lol team">
+                <div class="cardInfo">
+                    <h1>League of Legends</h1>
+                    <p>Blah blah lol laget waow omg 
+                    loool lag waow text text lorem ipsum we</p>
+                    <a href="lol.html" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/csgo2.jpg" alt="valorant team">
+                <div class="cardInfo">
+                    <h1>Valorant</h1>
+                    <p>Blah blah valorant laget waow omg 
+                    valorant lag waow text text lorem ipsum we</p>
+                    <a href="valorant.html" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    // Automatic slider functionality
+    var slider = document.querySelector('.slider-inner');
+    var slides = document.querySelectorAll('.slide');
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide, 6000); // Change slide every 2 seconds
+    
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+        slider.style.transform = 'translateX(-' + (currentSlide * 33.333) + '%)';
+    }
+    </script> 
 </body>
 </html>
