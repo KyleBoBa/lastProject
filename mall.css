@@ -252,6 +252,22 @@ body{
 .card .cardInfo .btn:hover{
     box-shadow: 0px 7px 10px rgba(0,25,57,0.5);
 }
+.accolades{
+    margin: 60px 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.accolades p{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.list li{
+    margin: 0.5rem 0;
+}
 .gameNav{
     margin: 200px auto 50px;
     max-width: 90%;
