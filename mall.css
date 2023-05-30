@@ -13,7 +13,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
 }
 #main-nav a{
     background: #B80E80;
@@ -327,7 +327,7 @@ footer {
     width: 100vw;
     height: auto;
     padding-top: 40px;
-    background-color: #B80E80;
+    background-color: #081010;
     color: white;
 }
 .footer-content {
@@ -340,9 +340,10 @@ footer {
 }
 .footer-content h3 {
     font-size: 2.1rem;
-    font-weight: 500;
+    font-weight: 800;
     text-transform: capitalize;
     line-height: 3rem;
+    font-family: 'Titillium Web', sans-serif;
 }
 .footer-content p {
     max-width: 500px;
@@ -350,6 +351,7 @@ footer {
     line-height: 28px;
     font-size: 14px;
     color: white;
+    font-family: 'chakra Petch', sans-serif;
 }
 .socials {
     list-style: none;
@@ -370,18 +372,18 @@ footer {
     border-radius: 50%; 
 }
 .socials a i {
-    font-size: 1.1rem;
-    width: 20px;
+    font-size: 1.2rem;
+    width: 17px;
     transition: color .4s ease;
 }
 .socials a:hover i {
-    color: #001939;
+    color: #B80E80;
 }
-.footer-bottom {
-    background-color: #93A8AC;
+.footer-bottom{
+    background: #000;
     width: 100vw;
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 10px;
+    padding-bottom: 25px;
     text-align: center;
 }
 .footer-bottom p{
@@ -389,6 +391,11 @@ footer {
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
+ }
+ .footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
  }
  .footer-bottom span{
      text-transform: uppercase;
