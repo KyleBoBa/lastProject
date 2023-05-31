@@ -368,6 +368,7 @@ nav{
     text-align: center;
     position: relative;
 }
+/* info om lagen */
 .titel{
     display: flex;
     justify-content: center;
@@ -380,7 +381,12 @@ nav{
 .titel h1{
     font-size: 2rem;
 }
+.titel h2{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: lighter;
+}
 .titel p{
+    font-family: 'Rajdhani', sans-serif;
     text-align: start;
     font-size: 1.2rem;
 }
@@ -389,7 +395,7 @@ nav{
     display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 20px;
-	margin: 0 auto;
+	margin: 50px auto;
 	max-width: 90%;
 }
 /* hover för spelar profil */
@@ -469,7 +475,6 @@ footer {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100vwh;
     height: auto;
     padding-top: 40px;
     background-color: #081010;
@@ -526,7 +531,6 @@ footer {
 }
 .footer-bottom{
     background: #000;
-    width: 100vwh;
     padding: 10px;
     padding-bottom: 25px;
     text-align: center;
