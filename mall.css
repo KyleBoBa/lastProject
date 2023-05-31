@@ -335,6 +335,7 @@ nav{
 }
 .list li{
     margin: 0.7rem 0;
+    letter-spacing: 1px;
 }
 .gameNav{
     margin: 200px auto 50px;
@@ -447,13 +448,28 @@ nav{
 .playerInfo h1{
     margin: 1rem 0;
 }
+/* aoout tab */
+.about{
+    margin: 100px auto;
+    margin-left: 40px;
+}
+.info{
+    letter-spacing: 1px;
+}
+.info h1{
+    font-size: 5rem;
+}
+.info p{
+    width: 60%;
+    font-size: 1.2rem;
+}
 /* footer */
 footer {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100vw;
+    width: 100vwh;
     height: auto;
     padding-top: 40px;
     background-color: #081010;
@@ -510,7 +526,7 @@ footer {
 }
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 100vwh;
     padding: 10px;
     padding-bottom: 25px;
     text-align: center;
@@ -531,7 +547,7 @@ footer {
      opacity: .4;
      font-weight: 200;
  }
-@media (max-width: 1450px){
+@media (max-width: 1470px){
     .imgFull{
         opacity: 0;
         position: absolute;
@@ -552,6 +568,13 @@ footer {
         margin-left: 10px;
         opacity: 1;
         transform: translateY(-50px);
+    }
+    .background{
+        opacity: 0;
+        position: absolute;
+    }
+    .list{
+        
     }
 }
 @media (max-width: 920px){
