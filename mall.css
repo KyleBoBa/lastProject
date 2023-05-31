@@ -9,7 +9,10 @@ body{
     background-color: #001939;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-nav {
+.rajdhani{
+    font-family: 'Rajdhani', sans-serif;
+}
+nav{
     position: fixed;
     top: 0;
     width: 100%;
@@ -17,7 +20,7 @@ nav {
 }
 #main-nav a{
     background: #B80E80;
-    color: #ffffff;
+    color: #93A8AC;
     display: block;
     height: 64px;
     justify-content: center;
@@ -56,7 +59,7 @@ nav {
     width: 100%;
 }
 #main-nav .active{
-    color: #93A8AC;
+    color: #fff;
 }
 /*Test */
 
@@ -114,14 +117,17 @@ nav {
     }
   }
 .eber{
-    margin: 60px 0px auto;
+    margin: 100px auto;
+    flex-direction: column;
+    width: 100%;
+}
+.eberText{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
 }
-.eber p{
+.eberText p{
     width: 50%;
     text-align: center;
     margin-bottom: 30px;
@@ -361,6 +367,22 @@ nav {
     text-align: center;
     position: relative;
 }
+.titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px auto;
+    width: 50%;
+    letter-spacing: 1px;
+}
+.titel h1{
+    font-size: 2rem;
+}
+.titel p{
+    text-align: start;
+    font-size: 1.2rem;
+}
 /* Grid layout för spelarnas ansikten */
 .faceGrid{
     display: grid;
@@ -369,11 +391,63 @@ nav {
 	margin: 0 auto;
 	max-width: 90%;
 }
+/* hover för spelar profil */
 .col-img{
+    height: 700px;
+    padding: 2rem 1rem;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
 }
+.col-img:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(184,14,128,0.5) 0%, rgba(0,25,57,0.5) 50%, rgba(184,14,128,0.5) 100%);
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.col-img:hover:before{
+    opacity: 1;
+    filter: saturate(1);
+}
+.col-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+.col-img .playerInfo{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.col-img:hover .playerInfo{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.col-img .playerInfo h1{
+    margin: 0;
+}
+.playerInfo h2{
+    font-size: 1.4rem;
+}
+.playerInfo h1{
+    margin: 1rem 0;
+}
+/* footer */
 footer {
     position: absolute;
     left: 0;
