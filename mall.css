@@ -12,6 +12,9 @@ body{
 .rajdhani{
     font-family: 'Rajdhani', serif;
 }
+.chakra{
+    font-family: 'Chakra Petch';
+}
 nav{
     position: fixed;
     top: 0;
