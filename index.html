@@ -12,7 +12,8 @@
 </head>
 <body>
     <header>
-        <div class="hamburerMenu"><!--hamburgare meny för mobil användare-->
+        <div class="logo"><img src="image/eber_e_pms.png" alt="logotyp"></div>
+        <div class="hamburgerMenu"><!--hamburgare meny för mobil användare-->
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -20,7 +21,7 @@
         <nav id="main-nav"><!--navigation för sidan-->
             <ul>
                 <li>
-                    <a href="index.html"><img src="image/eber_txt_pms.png" alt="logotyp"></a>
+                    <a class="active" href="#"><img src="image/eber_txt_pms.png" alt="logotyp"></a>
                 </li>
                 <li>
                     <a href="#">TEAMS
@@ -152,15 +153,23 @@
             <p>Esports at Eber is very successfull and their teams has won many tournaments around the country. The school is among the top in Sweden due to it's mindset of "quality over quantity".</p>
         </div>
         <ul class="socials">
-            <li><a href="https://www.facebook.com/ebersteinska/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/eberesport"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/eberesport/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/ebersteinska/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/eberesport" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/eberesport/" target="_blank"><i class="fa fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
         </ul>
         <div class="footer-bottom">
             <p>Copyright &copy;2023</p>
         </div>
     </footer>
+<script>
+    // Hamburger meny
+    hamburger = document.querySelector(".hamburgerMenu");
+    hamburger.onclick = function(){
+        navBar = document.querySelector("#main-nav");
+        navBar.classList.toggle("active");
+    }
+</script>
 <script>
     // Automatic slider functionality
     var slider = document.querySelector('.slider-inner');

@@ -21,6 +21,10 @@ nav{
     width: 100%;
     z-index: 5;
 }
+.logo img{
+    width: 0;
+    height: 0;
+}
 #main-nav a{
     background: #B80E80;
     color: #93A8AC;
@@ -71,7 +75,7 @@ nav{
 
 .slider{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: relative;
     top: 64px;
@@ -460,21 +464,93 @@ nav{
 .playerInfo h1{
     margin: 1rem 0;
 }
-/* aoout tab */
+/* about tab */
 .about{
-    margin: 100px auto;
-    margin-left: 40px;
+    display: flex;
 }
 .info{
+    margin: 100px auto;
+    margin-left: 40px;
     letter-spacing: 1px;
 }
 .info h1{
+    margin-bottom: 30px;
     font-size: 5rem;
-    margin-bottom: 50px;
 }
 .info p{
-    width: 60%;
+    width: 90%;
     font-size: 1.2rem;
+}
+.info li{
+    width: 55%;
+}
+.program{
+    font-size: 1.2rem;
+}
+/* sponsors */
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.sponsors img{
+    width: 50%;
+}
+/* Kontakt sida */
+.schoolImg {
+    margin-top: 128px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.ebsmall{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact h1{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+.hq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.hq h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.1rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.hq p{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+.hq a{
+    color: #ca0065;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.1);
 }
 /* footer */
 footer {
@@ -558,6 +634,13 @@ footer {
      opacity: .4;
      font-weight: 200;
  }
+@media (max-width: 1720px){
+    .schoolImg .fills{
+        width: 0;
+        height: 0;
+    }
+}
+
 @media (max-width: 1470px){
     .imgFull{
         opacity: 0;
@@ -584,16 +667,155 @@ footer {
         opacity: 0;
         position: absolute;
     }
-    .list{
-        
+    .titel{
+        width: 70%;
+    }
+    .faceGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info h1{
+        text-align: center;
+    }
+    .info p{
+        width: 85%;
+        text-align: start;
+    }
+    .sponsors{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .sponsors img{
+        width: 23%;
     }
 }
 @media (max-width: 920px){
+    header{
+        width: 100vw;
+        position: fixed;
+        z-index: 5;
+        background: #B80E80;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .slider{
+        width: 0;
+        height: 0;
+    }
+    .hamburgerMenu{
+		display: block;
+		cursor: pointer;
+        padding: 20px 0;
+	}
+	.hamburgerMenu .line{
+		width: 40px;
+		height: 4px;
+		background: #fff;
+		margin: 0.5rem 1rem;
+	}
+    .logo img{
+        padding: 8px;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+    }
+    #main-nav{
+        height: 0;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #93A8AC;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: center;
+		transition: 0.2s;
+		overflow: hidden;
+    }
+    #main-nav.active{
+		height: 450px;
+	}
+	#main-nav ul{
+		display: block;
+		width: fit-content;
+		margin: 80px auto 0 auto;
+		text-align: center;
+		transition: 0.5s;
+		opacity: 0;
+	}
+	#main-nav.active ul{
+		opacity: 1;
+	}
+    #main-nav ul li a{
+		color: #fff;
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		background: #93A8AC;
+    }
+    .home{
+        margin-top: 130px;
+    }
     .cardContainer{
         flex-direction: column;
     }
     .card{
         width: 75%;
         margin: 20px;
+    }
+    .faceGrid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .info{
+        margin: 0 30px 50px 30px;
+        padding-top: 120px;
+    }
+    .info h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .info p{
+        text-align: justify;
+        width: 100%;
+    }
+    .info li{
+        width: 90%;
+    }
+    .schoolImg{
+        margin: 0 0 50px 0;
+        padding-top: 200px;
+    }
+    .mainContainer{
+        margin: 1px;
+        padding-top: 1px;
+    }
+}
+@media (max-width: 720px){
+    .ebbig{
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    .ebsmall{
+        position: relative;
+        opacity: 1;
+        width: 90%;
+        height: fit-content;
     }
 }

@@ -15,7 +15,8 @@
 
 <body>
     <header>
-        <div class="hamburerMenu"><!--hamburgare meny för mobil användare-->
+        <div class="logo"><img src="image/eber_e_pms.png" alt="logotyp"></div>
+        <div class="hamburgerMenu"><!--hamburgare meny för mobil användare-->
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -71,8 +72,8 @@
                 time, having won 2019, 2020 back-to-back Grand Finals
                 as well as the 2022 runner up.
                 <br><br>
-                Eberesport's content channels span YouTube, TikTok, Instagram, T
-                witter, Facebook and multiple Snapchat Discover shows.
+                Eberesport's content channels span YouTube, TikTok, Instagram, 
+                Twitter, Facebook and multiple Snapchat Discover shows.
                 Eberesport's social gaming brand, Full Squad Gaming, has become
                 an instant powerhouse amassing millions of followers on
                 TikTok and YouTube. Eberesport content channels currently reach
@@ -84,14 +85,33 @@
                 space, scrim / stream areas and general craziness.
                 <br><br>
                 Organization and content sponsors include LEGION by LENOVO, 
-                Norrköping esport, Stadium Sports Camp and """.
+                Norrköping esport and Stadium Sports Camp.
+                <br><br>
+                <hr class="atbLine">
+                <br>
+                <p class="rajdhani program">Esport på Ebersteinska gymnasiet är en skräddarsydd gymnasieutbildning 
+                för dig som gillar e-sport. Hos oss får du som vill möjligheten att tävla 
+                och fördjupa dig inom e-sport och spelprogrammering.
+                Väljer du e-sport så ingår kursen träningslära för alla elever 
+                på e-sportsprofilen, där vi tränar på professionellt gym där skolan 
+                bekostar ditt gymkort samt instruktör. 
+                </p>
+                <br>
+                <br>
+                <li class="chakra program">E-sport (300 poäng) från Ekonomiprogrammet (EK), 
+                    Försäljning- och serviceprogrammet (FS), Naturvetenskapliga 
+                    programmet (NA), Samhällsvetenskapliga programmet (SA), 
+                    Teknikprogrammet (TE) och Vård- och omsorgsprogrammet (VO)
+                </li>
+                <li class="chakra program">
+                    E-sport + spelprogrammering från Teknikprogrammet (TE).
+                </li>
             </p>
-            <div class="sponsors">
-                <img src="#" alt="legion">
-                <img src="#" alt="norrkoping esport">
-                <img src="#" alt="stadium sports camp">
-                <img src="#" alt="">
-            </div>
+        </div>
+        <div class="sponsors">
+            <img src="image/legion3.png" alt="legion">
+            <img src="image/ssc.png" alt="stadium sports camp">
+            <img src="image/norrköping_esport.png" alt="norrkoping esport">
         </div>
     </div>
     <footer>
@@ -101,15 +121,22 @@
                 school is among the top in Sweden due to it's mindset of "quality over quantity".</p>
         </div>
         <ul class="socials">
-            <li><a href="https://www.facebook.com/ebersteinska/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/eberesport"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/eberesport/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/ebersteinska/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/eberesport" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/eberesport/" target="_blank"><i class="fa fa-instagram"></i></a></li>
             <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
         </ul>
         <div class="footer-bottom">
             <p>Copyright &copy;2023</p>
         </div>
     </footer>
+<script>
+    // Hamburger meny
+    hamburger = document.querySelector(".hamburgerMenu");
+    hamburger.onclick = function(){
+        navBar = document.querySelector("#main-nav");
+        navBar.classList.toggle("active");
+    }
+</script>
 </body>
-
 </html>

@@ -12,7 +12,8 @@
 </head>
 <body>
     <header>
-        <div class="hamburerMenu"><!--hamburgare meny för mobil användare-->
+        <div class="logo"><img src="image/eber_e_pms.png" alt="logotyp"></div>
+        <div class="hamburgerMenu"><!--hamburgare meny för mobil användare-->
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -48,12 +49,35 @@
             </ul>
         </nav>
     </header>
-    <div class="hq">
-        <h1>COME VISIT US</h1>
-        <div class="schoolImg">
-            <img src="image/ebersteinska1.jpg" alt="picture of ebersteinska-gymnasiet">
+    <div class="schoolImg">
+        <img class="fills" src="image/fill_left.png">
+        <img class="ebbig" src="image/ebersteinska1.jpg" alt="Picture of Ebersteinska">
+        <img class="ebsmall" src="image/ebersteinska_small.jpg" alt="yeah">
+        <img class="fills" src="image/fill_right.png">
+        <div class="contact">
+            <h1>Contact Us</h1>
         </div>
-        
+    </div>
+    <div class="hq">
+        <h1>Ebersteinska</h1>
+        <p>Linköpingsvägen 6</p>
+        <p>603 36 Norrköping</p>
+        <p>Sweden</p>
+        <p></p>
+        <p>--------------------------------</p>
+        <p></p>
+        <p>Jonas Dahl</p>
+        <p>Phone: <a href="tel:072-581-2827">072-581 28 27</a></p>
+        <p>Email: <a href="mailto:jonas.dahl@norrkoping.se" target="_blank">jonas.dahl@norrkoping.se</a></p>
+        <p></p>
+        <p></p>
+        <p>Drazen Dijak</p>
+        <p>Phone: <a href="tel:070-857-2616">070-857 26 16</a></p>
+        <p>Email: <a href="drazen.dijak@norrkoping.se" target="_blank">drazen.dijak@norrkoping.se</a></p>
+        <p></p>
+        <p>--------------------------------</p>
+        <p></p>
+        <p>Visit: <a href="https://goo.gl/maps/eq8t9q528STziK1w9" target="_blank">See Google Maps</a></p>
     </div>
     <footer>
         <div class="footer-content">
@@ -61,14 +85,22 @@
             <p>Esports at Eber is very successfull and their teams has won many tournaments around the country. The school is among the top in Sweden due to it's mindset of "quality over quantity".</p>
         </div>
         <ul class="socials">
-            <li><a href="https://www.facebook.com/ebersteinska/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/eberesport"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/eberesport/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/ebersteinska/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/eberesport" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/eberesport/" target="_blank"><i class="fa fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
         </ul>
         <div class="footer-bottom">
             <p>Copyright &copy;2023</p>
         </div>
     </footer>
+<script>
+    // Hamburger meny
+    hamburger = document.querySelector(".hamburgerMenu");
+    hamburger.onclick = function(){
+        navBar = document.querySelector("#main-nav");
+        navBar.classList.toggle("active");
+    }
+</script>
 </body>
 </html>
