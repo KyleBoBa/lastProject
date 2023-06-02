@@ -64,6 +64,9 @@ nav{
 #main-nav .active{
     color: #fff;
 }
+#main-nav img{
+    width: 140px;
+}
 /*Test */
 
 .slider{
