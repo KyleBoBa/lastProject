@@ -7,10 +7,13 @@
 body{
     color: white;
     background-color: #001939;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 .rajdhani{
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Rajdhani', serif;
+}
+.chakra{
+    font-family: 'Chakra Petch';
 }
 nav{
     position: fixed;
@@ -201,7 +204,7 @@ nav{
     margin-top: 8px;
     margin-bottom: 20px;
 }
-.eberImg .eberInfo button{
+.eberImg .eberInfo a{
     text-decoration: none;
     padding: 0.5rem 1rem;
     background: #B80E80;
